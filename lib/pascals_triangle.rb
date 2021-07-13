@@ -16,7 +16,7 @@ class PascalsTriangle
         (previous_row.length - 1).times do |i|
             middle.push(previous_row[i] + previous_row[i + 1])
         end
-        rows = [1, middle, 1].flatten
+        [1, middle, 1].flatten
     end
 
     def draw(input)
